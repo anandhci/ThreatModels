@@ -10,7 +10,457 @@
       {
         "title": "Overall",
         "thumbnail": "./public/content/images/thumbnail.jpg",
-        "id": 0
+        "id": 0,
+        "diagramJson": {
+          "cells": [
+            {
+              "type": "tm.Actor",
+              "size": {
+                "width": 160,
+                "height": 80
+              },
+              "position": {
+                "x": 26,
+                "y": 58
+              },
+              "angle": 0,
+              "id": "54034c05-c700-4aa2-9aa5-3a217d1171be",
+              "z": 1,
+              "hasOpenThreats": true,
+              "threats": [
+                {
+                  "status": "Open",
+                  "severity": "High",
+                  "title": "Tamper the Sensors",
+                  "type": "Tampering",
+                  "description": "Actor can tamper the deivce",
+                  "mitigation": "Physical Security"
+                }
+              ],
+              "attrs": {
+                ".element-shape": {
+                  "class": "element-shape hasOpenThreats isInScope"
+                },
+                "text": {
+                  "text": "Lot Sensor"
+                },
+                ".element-text": {
+                  "class": "element-text hasOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Process",
+              "size": {
+                "width": 100,
+                "height": 100
+              },
+              "position": {
+                "x": 323,
+                "y": 46
+              },
+              "angle": 0,
+              "id": "846454e3-ff5c-4ef2-9a01-972bb8f25ef9",
+              "z": 2,
+              "hasOpenThreats": false,
+              "attrs": {
+                ".element-shape": {
+                  "class": "element-shape hasNoOpenThreats isInScope"
+                },
+                "text": {
+                  "text": "Gateway"
+                },
+                ".element-text": {
+                  "class": "element-text hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Flow",
+              "smooth": true,
+              "source": {
+                "x": 187,
+                "y": 105
+              },
+              "target": {
+                "id": "846454e3-ff5c-4ef2-9a01-972bb8f25ef9"
+              },
+              "vertices": [
+                {
+                  "x": 250,
+                  "y": 98
+                }
+              ],
+              "id": "6c2ca176-bb6f-4840-8590-7ba79002efbb",
+              "labels": [
+                {
+                  "position": 0.5,
+                  "attrs": {
+                    "text": {
+                      "text": "Sensor data",
+                      "font-weight": "400",
+                      "font-size": "small"
+                    }
+                  }
+                }
+              ],
+              "z": 3,
+              "hasOpenThreats": false,
+              "isEncrypted": true,
+              "protocol": "ZigBee",
+              "attrs": {
+                ".marker-target": {
+                  "class": "marker-target hasNoOpenThreats isInScope"
+                },
+                ".connection": {
+                  "class": "connection hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Flow",
+              "smooth": true,
+              "source": {
+                "id": "846454e3-ff5c-4ef2-9a01-972bb8f25ef9"
+              },
+              "target": {
+                "id": "5d598996-b332-4f27-b4a9-93adc4d10dd4"
+              },
+              "vertices": [
+                {
+                  "x": 535,
+                  "y": 107
+                }
+              ],
+              "id": "9e710d34-71b6-4034-b9e7-8d07419908ca",
+              "labels": [
+                {
+                  "position": 0.5,
+                  "attrs": {
+                    "text": {
+                      "text": "agregated Data",
+                      "font-weight": "400",
+                      "font-size": "small"
+                    }
+                  }
+                }
+              ],
+              "z": 4,
+              "hasOpenThreats": false,
+              "protocol": "WiFi",
+              "isEncrypted": true,
+              "isPublicNetwork": true,
+              "attrs": {
+                ".marker-target": {
+                  "class": "marker-target hasNoOpenThreats isInScope"
+                },
+                ".connection": {
+                  "class": "connection hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Process",
+              "size": {
+                "width": 100,
+                "height": 100
+              },
+              "position": {
+                "x": 586,
+                "y": 79
+              },
+              "angle": 0,
+              "id": "5d598996-b332-4f27-b4a9-93adc4d10dd4",
+              "z": 5,
+              "hasOpenThreats": false,
+              "attrs": {
+                ".element-shape": {
+                  "class": "element-shape hasNoOpenThreats isInScope"
+                },
+                "text": {
+                  "text": "Router"
+                },
+                ".element-text": {
+                  "class": "element-text hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Actor",
+              "size": {
+                "width": 160,
+                "height": 80
+              },
+              "position": {
+                "x": 17,
+                "y": 193
+              },
+              "angle": 0,
+              "id": "bf60313e-1624-4a44-bad8-a3767c50924e",
+              "z": 6,
+              "hasOpenThreats": false,
+              "attrs": {
+                ".element-shape": {
+                  "class": "element-shape hasNoOpenThreats isInScope"
+                },
+                "text": {
+                  "text": "IP Camera"
+                },
+                ".element-text": {
+                  "class": "element-text hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Process",
+              "size": {
+                "width": 100,
+                "height": 100
+              },
+              "position": {
+                "x": 332,
+                "y": 202
+              },
+              "angle": 0,
+              "id": "b5076d92-61d9-4b22-a4af-e469d6e1daaf",
+              "z": 7,
+              "hasOpenThreats": false,
+              "attrs": {
+                ".element-shape": {
+                  "class": "element-shape hasNoOpenThreats isInScope"
+                },
+                "text": {
+                  "text": "Router"
+                },
+                ".element-text": {
+                  "class": "element-text hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Flow",
+              "smooth": true,
+              "source": {
+                "id": "bf60313e-1624-4a44-bad8-a3767c50924e"
+              },
+              "target": {
+                "id": "b5076d92-61d9-4b22-a4af-e469d6e1daaf"
+              },
+              "vertices": [],
+              "id": "2784c1f6-35fb-4a4c-8a78-a0ac94280fb1",
+              "labels": [
+                {
+                  "position": 0.5,
+                  "attrs": {
+                    "text": {
+                      "text": "Raw Video",
+                      "font-weight": "400",
+                      "font-size": "small"
+                    }
+                  }
+                }
+              ],
+              "z": 8,
+              "hasOpenThreats": false,
+              "isPublicNetwork": true,
+              "protocol": "Wifi",
+              "attrs": {
+                ".marker-target": {
+                  "class": "marker-target hasNoOpenThreats isInScope"
+                },
+                ".connection": {
+                  "class": "connection hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Process",
+              "size": {
+                "width": 100,
+                "height": 100
+              },
+              "position": {
+                "x": 609,
+                "y": 246
+              },
+              "angle": 0,
+              "id": "970d97a6-c70c-4341-8146-bb5532933b1d",
+              "z": 9,
+              "hasOpenThreats": false,
+              "attrs": {
+                ".element-shape": {
+                  "class": "element-shape hasNoOpenThreats isInScope"
+                },
+                "text": {
+                  "text": "Parking Manag\nementApp"
+                },
+                ".element-text": {
+                  "class": "element-text hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Flow",
+              "smooth": true,
+              "source": {
+                "id": "5d598996-b332-4f27-b4a9-93adc4d10dd4"
+              },
+              "target": {
+                "id": "970d97a6-c70c-4341-8146-bb5532933b1d"
+              },
+              "vertices": [
+                {
+                  "x": 646,
+                  "y": 233
+                }
+              ],
+              "id": "5682b21d-b9cb-405a-854a-fafed9bfb424",
+              "labels": [
+                {
+                  "position": 0.5,
+                  "attrs": {
+                    "text": {
+                      "text": "Aggregated Data",
+                      "font-weight": "400",
+                      "font-size": "small"
+                    }
+                  }
+                }
+              ],
+              "z": 10,
+              "hasOpenThreats": false,
+              "protocol": "Wifi",
+              "isEncrypted": true,
+              "isPublicNetwork": true,
+              "attrs": {
+                ".marker-target": {
+                  "class": "marker-target hasNoOpenThreats isInScope"
+                },
+                ".connection": {
+                  "class": "connection hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Flow",
+              "smooth": true,
+              "source": {
+                "id": "b5076d92-61d9-4b22-a4af-e469d6e1daaf"
+              },
+              "target": {
+                "id": "970d97a6-c70c-4341-8146-bb5532933b1d"
+              },
+              "vertices": [],
+              "id": "99c0beb7-2c9f-4332-a57d-f79a45827b21",
+              "labels": [
+                {
+                  "position": 0.5,
+                  "attrs": {
+                    "text": {
+                      "text": "Raw Video",
+                      "font-weight": "400",
+                      "font-size": "small"
+                    }
+                  }
+                }
+              ],
+              "z": 11,
+              "hasOpenThreats": false,
+              "protocol": "Wifi",
+              "isPublicNetwork": true,
+              "attrs": {
+                ".marker-target": {
+                  "class": "marker-target hasNoOpenThreats isInScope"
+                },
+                ".connection": {
+                  "class": "connection hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Boundary",
+              "smooth": true,
+              "source": {
+                "x": 234,
+                "y": 47
+              },
+              "target": {
+                "x": 238,
+                "y": 138
+              },
+              "vertices": [
+                {
+                  "x": 258,
+                  "y": 70
+                },
+                {
+                  "x": 242,
+                  "y": 126
+                }
+              ],
+              "id": "70762804-5aa5-4999-82d6-0f5007561408",
+              "z": 12,
+              "attrs": {}
+            },
+            {
+              "type": "tm.Boundary",
+              "smooth": true,
+              "source": {
+                "x": 548,
+                "y": 66
+              },
+              "target": {
+                "x": 541,
+                "y": 150
+              },
+              "vertices": [],
+              "id": "31fcdc76-f9a7-497f-b3c9-bba564c8d687",
+              "z": 13,
+              "attrs": {}
+            },
+            {
+              "type": "tm.Boundary",
+              "smooth": true,
+              "source": {
+                "x": 263,
+                "y": 185
+              },
+              "target": {
+                "x": 248,
+                "y": 286
+              },
+              "vertices": [
+                {
+                  "x": 278,
+                  "y": 242
+                }
+              ],
+              "id": "aa23c58b-97e3-4114-9151-1bf53b05a6f0",
+              "z": 14,
+              "attrs": {}
+            },
+            {
+              "type": "tm.Boundary",
+              "smooth": true,
+              "source": {
+                "x": 551,
+                "y": 235
+              },
+              "target": {
+                "x": 546,
+                "y": 322
+              },
+              "vertices": [],
+              "id": "773d2581-37ac-4fa2-b1b5-2c4e1f8ee3ca",
+              "z": 15,
+              "attrs": {}
+            }
+          ]
+        },
+        "size": {
+          "height": 1854.016357421875,
+          "width": 801
+        }
       }
     ],
     "reviewer": "Anand"
