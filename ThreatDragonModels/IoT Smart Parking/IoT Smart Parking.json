@@ -1,0 +1,18 @@
+{
+  "summary": {
+    "title": "IoT Smart Parking",
+    "owner": "Anand",
+    "description": "A IoT System for smart parking"
+  },
+  "detail": {
+    "contributors": [],
+    "diagrams": [
+      {
+        "title": "Overall",
+        "thumbnail": "./public/content/images/thumbnail.jpg",
+        "id": 0
+      }
+    ],
+    "reviewer": "Anand"
+  }
+}
